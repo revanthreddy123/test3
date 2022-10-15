@@ -22,7 +22,8 @@ body {
 .main-container .text {
   align-items: center;
   padding-left: 20px;
-  max-width: 55px;
+  min-width: 350px;
+  width: 350px;
   max-height: 200vh;
   z-index: 100;
   background: rgba(0, 0, 0, 0.5);
