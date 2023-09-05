@@ -1,35 +1,784 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NeoFrames</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>William Clarence</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+    <!-- =======================================================
+  * Template Name: Nova - v1.3.0
+  * Template URL: https://bootstrapmade.com/nova-bootstrap-business-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
   </head>
-  <body>
-    <div class="main-container">
-      <h3>test123</h3>
-      <div class="text">
-        <img src="./images/logo.png" alt="logo" />
-        <h1>Design Studio</h1>
-        <h2>Design studio</h2>
-        <br />
-        <h2>Free Architect Consultation</h2>
-        <br />
-        <h2>Book Now</h2>
+
+  <body class="page-index">
+    <!-- ======= Header ======= -->
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div
+        class="container-fluid container-xl d-flex align-items-center justify-content-between"
+      >
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <h1 class="d-flex align-items-center">William Clarence</h1>
+        </a>
+
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            
+            <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+              
+            </div>
+          </ul>
+
+          
+          
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="hero d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4">
+            <h2 data-aos="fade-up">Overseas Consultancy</h2>
+            <blockquote data-aos="fade-up" data-aos-delay="100">
+              <p id="test">
+                Welcome to William Clarence, your trusted partner for turning your dreams of study/Job in Abroad into reality. 
+              </p>
+              <p id="test">
+                We specialize in UK admissions and visa processing, ensuring a smooth and successful journey to your dream university
+              </p>
+            </blockquote>
+            <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+              <a href="#progress" class="btn-get-started" onclick="openForm()">Get Started</a>
+
+              <!-- A button to open the popup form -->
+
+
+<!-- The form -->
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+</script>
+
+
+<style>
+
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+</style>
+
+              <!--
+            <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+              <button onclick="doSomething()" class="btn-get-started">
+                Get Started
+              </button>
+
+              <script>
+                function doSomething() {
+                  document.getElementById("test").innerHTML =
+                    "What you want to do";
+                }
+              </script> -->
+
+              <!-- <a
+                href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
+                class="glightbox btn-watch-video d-flex align-items-center"
+                ><i class="bi bi-play-circle"></i><span>Watch Video</span></a
+              > -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero Section -->
+
+  
+
+
+            <section id="why-us" class="why-us">
+              <div class="container" data-aos="fade-up">
+                <div class="section-header">
+                  <h2>Our Step by Step process</h2>
+                </div>
+      
+                <div class="row g-0" data-aos="fade-up" data-aos-delay="200">
+                  <div
+                    class="col-xl-5 img-bg"
+                    style="background-image: url('assets/img/1.jpg')"
+                  ></div>
+                  <div class="col-xl-7 slides position-relative">
+                    <div class="slides-1 swiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="item">
+                            <h3 class="mb-3"> Step 1 :</h3>
+                            <h4 class="mb-3">
+                              University Selection
+                            </h4>
+                            <p>
+                              Choosing the right university is the foundation of your UK education journey. We help you identify universities that align with your academic goals, budget, and preferences.
+                            </p>
+                          </div>
+                        </div>
+                        <!-- End slide item -->
+      
+                        <div class="swiper-slide">
+                          <div class="item">
+                            <h3 class="mb-3">
+                              Step 2 :
+                            </h3>
+                            <h4 class="mb-3">
+                              Application Assistance:
+                              
+                            </h4>
+                            <p>
+                              Crafting a compelling application can be daunting. We guide you through the application process, ensuring every detail is perfect to maximize your chances of acceptance.
+                            </p>
+                          </div>
+                        </div>
+                        <!-- End slide item -->
+      
+                        <div class="swiper-slide">
+                          <div class="item">
+                            <h3 class="mb-3">Step 3 :</h3>
+                            <h4 class="mb-3">
+                              Interview Preparation:
+                            </h4>
+                            <p>
+                              Interviews can be nerve-wracking. We offer interview coaching and practice sessions to help you shine in university interviews and secure your spot.
+                            </p>
+                          </div>
+                        </div>
+                        <!-- End slide item -->
+      
+                        <div class="swiper-slide">
+                          <div class="item">
+                            <h3 class="mb-3">
+                              Step 4 :
+                            </h3>
+                            <h4 class="mb-3">
+                              Visa Processing:
+                            </h4>
+                            <p>
+                              Navigating visa requirements is complex. We handle the paperwork, assist with visa interviews, and ensure you meet all the criteria for a successful visa application.
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="item">
+                            <h3 class="mb-3">
+                              Step 5 :
+                            </h3>
+                            <h4 class="mb-3">
+                              Scholarship and Financial Aid Guidance: 
+                            </h4>
+                            <p>
+                              We help you explore scholarship opportunities and financial aid to make your UK education more affordable.
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="item">
+                            <h3 class="mb-3">
+                              Step 6 :
+                            </h3>
+                            <h4 class="mb-3">
+                              Pre-Departure Orientation: 
+                            </h4>
+                            <p>
+                              : Preparing for your journey abroad is crucial. We offer pre-departure orientations, helping you adapt to the new culture and environment seamlessly.
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="item">
+                            <h3 class="mb-3">
+                              Step 7 :
+                            </h3>
+                            <h4 class="mb-3">
+                              Accommodation Support:
+                            </h4>
+                            <p>
+                              Finding the right place to stay is essential for your comfort and well-being. We assist you in securing suitable accommodation near your university.
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="item">
+                            <h3 class="mb-3">
+                              Step 8 :
+                            </h3>
+                            <h4 class="mb-3">
+                              Post-Arrival Assistance:
+                            </h4>
+                            <p>
+                              Your transition to the UK doesn't end with arrival. We provide support as you settle in, making sure you have a smooth start to your academic journey.
+                            </p>
+                          </div>
+                        </div>
+                        <!-- End slide item -->
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- End Why Choose Us Section -->
+
+            
+
+
+      <!--
+      
+      <section id="progress" class="progress">
+        <div class="container" data-aos="fade-up">
+          <div class="section-header">
+            <h2>Progress</h2>
+            <h2>progress</h2>
+          </div>
+        </div>
+      </section>
+
+      <section id="progress" class="progress">
+        <div class="container" data-aos="fade-up">
+          <div class="section-header">
+            <h3>What's your next career plan?</h3>
+          </div>
+        </div>
+      </section> -->
+    </main>
+
+
+
+      <!-- ======= Our Services Section ======= -->
+      <section id="services-list" class="services-list">
+        <div class="container" data-aos="fade-up">
+          <div class="section-header">
+            <h2>Our Services</h2>
+          </div>
+
+          <div class="row gy-5">
+            <div
+              class="col-lg-4 col-md-6 service-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-briefcase" style="color: #f57813"></i>
+              </div>
+              <div>
+                <h4 class="title">
+                  <a href="#" class="stretched-link">Visa Processing</a>
+                </h4>
+                <p class="description">
+                  Streamline your visa application process with our expert guidance, ensuring a smooth transition to the UK and other countries.
+                </p>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6 service-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-card-checklist" style="color: #15a04a"></i>
+              </div>
+              <div>
+                <h4 class="title">
+                  <a href="#" class="stretched-link">University Admissions</a>
+                </h4>
+                <p class="description">
+                  Unlock access to top universities with our personalized guidance, making your dream education a reality.
+                </p>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6 service-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-bar-chart" style="color: #d90769"></i>
+              </div>
+              <div>
+                <h4 class="title">
+                  <a href="#" class="stretched-link">Job Offers</a>
+                </h4>
+                <p class="description">
+                  Kick-start your career in the UK with our job placement services, connecting you to exciting employment opportunities
+                </p>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+
+          </div>
+        </div>
+      </section>
+      <!-- End Our Services Section -->
+
+      <!-- ======= Call To Action Section ======= -->
+      <section id="call-to-action" class="call-to-action">
+        <div class="container" data-aos="fade-up">
+          <div class="row justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h3>Start your Career in Abroad?</h3>
+              <p>
+                Ready to start your journey to Abroad? Contact us today, and let's make your dreams come true. We're just a call or email away.
+              </p>
+              <a class="cta-btn" href="#">Call To Action</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Call To Action Section -->
+
+      <main id="main">
+        <!-- ======= Why Choose Us Section ======= -->
+        <section id="why-us" class="why-us">
+          <div class="container" data-aos="fade-up">
+            <div class="section-header">
+              <h2>Why Choose Us</h2>
+            </div>
+  
+            <div class="row g-0" data-aos="fade-up" data-aos-delay="200">
+              <div
+                class="col-xl-5 img-bg"
+                style="background-image: url('assets/img/why-us-bg.jpg')"
+              ></div>
+              <div class="col-xl-7 slides position-relative">
+                <div class="slides-1 swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="item">
+                        <h3 class="mb-3"> Personalized Guidance</h3>
+                        <h4 class="mb-3">
+                          At William Clarence, we believe in your unique potential.
+                        </h4>
+                        <p>
+                           We provide one-on-one consultations to understand your aspirations, strengths, and ambitions. With a personalized plan, we ensure your path to the UK is tailor-made just for you
+                        </p>
+                      </div>
+                    </div>
+                    <!-- End slide item -->
+  
+                    <div class="swiper-slide">
+                      <div class="item">
+                        <h3 class="mb-3">
+                          Expertise
+                        </h3>
+                        <h4 class="mb-3">
+                          We are the experts in UK admissions and visa processing.
+                          
+                        </h4>
+                        <p>
+                           Our seasoned consultants have an in-depth understanding of the intricacies of the UK education system and immigration laws. We leverage this knowledge to make your journey seamless and successful.
+                        </p>
+                      </div>
+                    </div>
+                    <!-- End slide item -->
+  
+                    <div class="swiper-slide">
+                      <div class="item">
+                        <h3 class="mb-3">Streamlined Process:</h3>
+                        <h4 class="mb-3">
+                          
+                        </h4>
+                        <p>
+                          Don't get lost in the paperwork and bureaucratic hurdles. We handle the complexities of applications and visas, so you can focus on what truly matters – preparing for your academic adventure in the UK.
+                        </p>
+                      </div>
+                    </div>
+                    <!-- End slide item -->
+  
+                    <div class="swiper-slide">
+                      <div class="item">
+                        <h3 class="mb-3">
+                          Success Stories:
+                        </h3>
+                        <h4 class="mb-3">
+                          
+                        </h4>
+                        <p>
+                          We have a track record of helping students just like you achieve their dreams of studying in the UK. Our success stories are a testament to our commitment and dedication to your success.
+                        </p>
+                      </div>
+                    </div>
+                    <!-- End slide item -->
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Why Choose Us Section -->
+
+      <!-- ======= Features Section ======= -->
+      
+      <!-- End Features Section -->
+
+      <!-- ======= Recent Blog Posts Section ======= -->
+      <section id="recent-posts" class="recent-posts">
+        <div class="container" data-aos="fade-up">
+          <div class="section-header">
+            <h2>Testimorals</h2>
+          </div>
+
+          <div class="row gy-5">
+            <div
+              class="col-xl-3 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="post-box">
+                <div class="post-img">
+                  <img
+                    src="assets/img/blog/blog-1.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="meta">
+                  <span class="post-date">Tue, December 12</span>
+                  <span class="post-author"> / Julia Parker</span>
+                </div>
+                <h3 class="post-title">
+                  Eum ad dolor et. Autem aut fugiat debitis
+                </h3>
+                <p>
+                  Illum voluptas ab enim placeat. Adipisci enim velit nulla. Vel
+                  omnis laudantium. Asperiores eum ipsa est officiis. Modi qui
+                  magni est...
+                </p>
+                <a href="blog-details.html" class="readmore stretched-link"
+                  ><span>Read More</span><i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+
+            <div
+              class="col-xl-3 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="post-box">
+                <div class="post-img">
+                  <img
+                    src="assets/img/blog/blog-2.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="meta">
+                  <span class="post-date">Fri, September 05</span>
+                  <span class="post-author"> / Mario Douglas</span>
+                </div>
+                <h3 class="post-title">
+                  Et repellendus molestiae qui est sed omnis
+                </h3>
+                <p>
+                  Voluptatem nesciunt omnis libero autem tempora enim ut ipsam
+                  id. Odit quia ab eum assumenda. Quisquam omnis doloribus...
+                </p>
+                <a href="blog-details.html" class="readmore stretched-link"
+                  ><span>Read More</span><i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+
+            <div
+              class="col-xl-3 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="post-box">
+                <div class="post-img">
+                  <img
+                    src="assets/img/blog/blog-3.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="meta">
+                  <span class="post-date">Tue, July 27</span>
+                  <span class="post-author"> / Lisa Hunter</span>
+                </div>
+                <h3 class="post-title">Quia assumenda est et veritati</h3>
+                <p>
+                  Quia nam eaque omnis explicabo similique eum quaerat similique
+                  laboriosam. Quis omnis repellat sed quae consectetur magnam...
+                </p>
+                <a href="blog-details.html" class="readmore stretched-link"
+                  ><span>Read More</span><i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+
+            <div
+              class="col-xl-3 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="post-box">
+                <div class="post-img">
+                  <img
+                    src="assets/img/blog/blog-4.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="meta">
+                  <span class="post-date">Tue, Sep 16</span>
+                  <span class="post-author"> / Mario Douglas</span>
+                </div>
+                <h3 class="post-title">
+                  Pariatur quia facilis similique deleniti
+                </h3>
+                <p>
+                  Et consequatur eveniet nam voluptas commodi cumque ea est ex.
+                  Aut quis omnis sint ipsum earum quia eligendi...
+                </p>
+                <a href="blog-details.html" class="readmore stretched-link"
+                  ><span>Read More</span><i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Recent Blog Posts Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+      <div class="footer-content">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-5 col-md-12 footer-info">
+              <a href="index.html" class="logo d-flex align-items-center">
+                <span>William Clarence</span>
+              </a>
+              <p>
+                Overseas Consultancy
+               
+              </p>
+              <div class="social-links d-flex mt-3">
+                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+
+            
+
+            <div class="col-lg-2 col-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li><i class="bi bi-dash"></i> <a href="#">Visa Processing</a></li>
+                <li>
+                  <i class="bi bi-dash"></i> <a href="#">University Admissions</a>
+                </li>
+                <li>
+                  <i class="bi bi-dash"></i> <a href="#">Job Offers</a>
+                </li>
+               
+              </ul>
+            </div>
+
+            <div
+              class="col-lg-3 col-md-12 footer-contact text-center text-md-start"
+            >
+              <h4>Contact Us</h4>
+              <p>
+                <strong>Phone:</strong> +1 5589 55488 55<br />
+                <strong>Email:</strong> customersupport@williamclarence.co.in<br />
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="image-container"></div>
-    </div>
-    <h2>2nd page</h2>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/three.js/105/three.min.js"
-      integrity="sha512-uWKImujbh9CwNa8Eey5s8vlHDB4o1HhrVszkympkm5ciYTnUEQv3t4QHU02CUqPtdKTg62FsHo12x63q6u0wmg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="js/panolens.min.js"></script>
-    <script src="main.js"></script>
+      <div class="footer-legal">
+        <div class="container">
+          <div class="copyright">
+            &copy; Copyright <strong><span>William Clarence</span></strong
+            >. All Rights Reserved
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- End Footer -->
+
+    <a
+      href="#"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
