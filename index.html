@@ -57,7 +57,8 @@
         <a href="index.html" class="logo d-flex align-items-center">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <!-- <img src="assets/img/logo.png" alt=""> -->
-          <h1 class="d-flex align-items-center">William Clarence</h1>
+          <img src="assets/img/logo.png">    
+          <!-- <h1 class="d-flex align-items-center">William           Clarence</h1> -->
         </a>
 
         <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -94,111 +95,89 @@
               </p>
             </blockquote>
             <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-              <a href="#progress" class="btn-get-started" onclick="openForm()">Get Started</a>
+              <a href="#progress" class="btn-get-started" onclick="openForm()">Contact Us</a>
 
               <!-- A button to open the popup form -->
 
 
 <!-- The form -->
-<div class="form-popup" id="myForm">
-  <form action="/action_page.php" class="form-container">
-    <h1>Login</h1>
 
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
+<div id="myForm" class="form-popup">
+  <button type="button" class="btn cancel" onclick="closeForm()">X</button>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+  <form action="process_form.php" method="post"> <!-- PHP script to handle form submission -->
 
-    <button type="submit" class="btn">Login</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      <label for="name"><b>Name</b></label>
+      <input type="text" placeholder="Enter Name" name="name" required>
+
+      <label for="phone"><b>Phone Number</b></label>
+      <input type="tel" placeholder="Enter Phone Number" name="phone" required>
+
+      <label for="email"><b>Email</b></label>
+      <input type="email" placeholder="Enter Email" name="email" required>
+
+      <button type="submit" class="btn">Submit</button>
   </form>
 </div>
 
 <script>
-function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
+  function openForm() {
+      document.getElementById("myForm").style.display = "block";
+  }
 
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-}
-
+  function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+  }
 </script>
 
-
 <style>
+  /* Add your CSS styling here */
+  .form-popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      background-color: #fff;
+  }
 
+  h1 {
+      text-align: center;
+  }
 
-/* Button used to open the contact form - fixed at the bottom of the page */
-.open-button {
-  background-color: #555;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  opacity: 0.8;
-  position: fixed;
-  bottom: 23px;
-  right: 28px;
-  width: 280px;
-}
+  label {
+      display: block;
+      margin-bottom: 10px;
+  }
 
-/* The popup form - hidden by default */
-.form-popup {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  right: 15px;
-  border: 3px solid #f1f1f1;
-  z-index: 9;
-}
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+  }
 
-/* Add styles to the form container */
-.form-container {
-  max-width: 300px;
-  padding: 10px;
-  background-color: white;
-}
-
-/* Full-width input fields */
-.form-container input[type=text], .form-container input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
-}
-
-/* When the inputs get focus, do something */
-.form-container input[type=text]:focus, .form-container input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-/* Set a style for the submit/login button */
-.form-container .btn {
-  background-color: #04AA6D;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom:10px;
-  opacity: 0.8;
-}
-
-/* Add a red background color to the cancel button */
-.form-container .cancel {
-  background-color: red;
-}
-
-/* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
-  opacity: 1;
-}
-
+  button.btn {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
 </style>
+
+
+
+
 
               <!--
             <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
@@ -231,7 +210,7 @@ function closeForm() {
             <section id="why-us" class="why-us">
               <div class="container" data-aos="fade-up">
                 <div class="section-header">
-                  <h2>Our Step by Step process</h2>
+                  <h2>Our Step by Step Guide</h2>
                 </div>
       
                 <div class="row g-0" data-aos="fade-up" data-aos-delay="200">
@@ -470,7 +449,7 @@ function closeForm() {
               <p>
                 Ready to start your journey to Abroad? Contact us today, and let's make your dreams come true. We're just a call or email away.
               </p>
-              <a class="cta-btn" href="#">Call To Action</a>
+              <a class="cta-btn" href="#">Contact Us</a>
             </div>
           </div>
         </div>
@@ -590,15 +569,13 @@ function closeForm() {
                   <span class="post-author"> / Julia Parker</span>
                 </div>
                 <h3 class="post-title">
-                  Eum ad dolor et. Autem aut fugiat debitis
+                  Trust Worthy
                 </h3>
                 <p>
-                  Illum voluptas ab enim placeat. Adipisci enim velit nulla. Vel
-                  omnis laudantium. Asperiores eum ipsa est officiis. Modi qui
-                  magni est...
+                  Working with William Clarence was a game-changer. Thanks to their guidance, I got accepted into my dream university in London with a scholarship. I couldn't have done it without them!
                 </p>
                 <a href="blog-details.html" class="readmore stretched-link"
-                  ><span>Read More</span><i class="bi bi-arrow-right"></i
+                  ><span></span><i class="bi bi-arrow-right"></i
                 ></a>
               </div>
             </div>
@@ -624,11 +601,10 @@ function closeForm() {
                   Et repellendus molestiae qui est sed omnis
                 </h3>
                 <p>
-                  Voluptatem nesciunt omnis libero autem tempora enim ut ipsam
-                  id. Odit quia ab eum assumenda. Quisquam omnis doloribus...
+                  I was lost in the complicated world of visa applications and university choices until I found William Clarence. Their expert advice and personalized support made my journey to studying abroad smooth and successful.
                 </p>
                 <a href="blog-details.html" class="readmore stretched-link"
-                  ><span>Read More</span><i class="bi bi-arrow-right"></i
+                  ><span></span><i class="bi bi-arrow-right"></i
                 ></a>
               </div>
             </div>
@@ -652,11 +628,10 @@ function closeForm() {
                 </div>
                 <h3 class="post-title">Quia assumenda est et veritati</h3>
                 <p>
-                  Quia nam eaque omnis explicabo similique eum quaerat similique
-                  laboriosam. Quis omnis repellat sed quae consectetur magnam...
+                  I highly recommend William Clarence to anyone considering studying overseas. Their team's dedication and knowledge of the application process made everything seem effortless. I'm now pursuing my master's degree in Computer Sciences at a top university in the UK!
                 </p>
                 <a href="blog-details.html" class="readmore stretched-link"
-                  ><span>Read More</span><i class="bi bi-arrow-right"></i
+                  ><span></span><i class="bi bi-arrow-right"></i
                 ></a>
               </div>
             </div>
@@ -682,11 +657,10 @@ function closeForm() {
                   Pariatur quia facilis similique deleniti
                 </h3>
                 <p>
-                  Et consequatur eveniet nam voluptas commodi cumque ea est ex.
-                  Aut quis omnis sint ipsum earum quia eligendi...
+                  My experience with William Clarence was exceptional. They provided step-by-step guidance, from choosing the right program to securing my student visa. Their personalized approach and attention to detail were truly impressive.
                 </p>
                 <a href="blog-details.html" class="readmore stretched-link"
-                  ><span>Read More</span><i class="bi bi-arrow-right"></i
+                  ><span></span><i class="bi bi-arrow-right"></i
                 ></a>
               </div>
             </div>
